@@ -7,7 +7,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 .container{
@@ -50,7 +50,6 @@ li{
 }
 img{
     height: auto;
-    color: white;
     height: 100%;
 }
 .content-container{
@@ -91,13 +90,12 @@ input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding: auto;
 }
 .subheader-container > .buttons-container{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 60px 60px 60px ;
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-inline: 20px;
 }
 .buttons-container > button {
     background-color: rgb(0, 110, 255);
@@ -105,8 +103,8 @@ input{
     border: none;
     color: white;
     height: 25px;
-    font-size: 0.8rem;
     width: 60px;
+    font-size: 0.8rem;
 }
 .body{
     background-color: rgb(198, 217, 233);
@@ -124,14 +122,15 @@ h1{
     gap: 10px;
 }
 .annoucements{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 .projects >  #projects{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
+    position: relative;
     border-left: solid orange 7px;
 }
 .annoucements > div > #annoucements, .trending{
@@ -141,14 +140,67 @@ h1{
 }
 .subheader-container > .details-container{
     padding-inline: 30px;
+    height: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
-.header-container > .details-container > span {
-    float: right;
+
+#projects > .icons{
+    height: 15px;
+    right: 0;
+    position: absolute;
+    bottom: 10px;
 }
-.buttons-container{
+#projects > .icons > img{
+    margin: 5px;
+}
+.header-container > .details-container{
+    height: 20px;
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
 }
-.buttons-container > button{
-    margin-right: 30px;
+.subheader-container > .details-container > .div{
+    height: 40px;
+    background-image: url(./images/doraemon-tv-series-1920x1200-13864.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    width: 40px;
+}
+.image{
+    border-radius: 50px;
+}
+.subheader-container > .details-container > .text{
+    display: flex;
+    flex-direction: column;
+}
+.trending > ul {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.trending > ul > li > .text-holder {
+    display: flex;
+    flex-direction: column;
+}
+.trending > ul > li {
+    margin: 10px;
+}
+.trending > ul > li > div > :nth-child(1){
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(./images/HD-wallpaper-omg-cartoon-character-emoji-eyes-face-mouth-yellow.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.trending > ul > li > .content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}.text-holder > h1 {
+    margin: 0;
 }
