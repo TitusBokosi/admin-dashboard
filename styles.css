@@ -106,6 +106,7 @@ input{
     color: white;
     height: 25px;
     font-size: 0.8rem;
+    width: 60px;
 }
 .body{
     background-color: rgb(198, 217, 233);
@@ -143,4 +144,11 @@ h1{
 }
 .header-container > .details-container > span {
     float: right;
+}
+.buttons-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.buttons-container > button{
+    margin-right: 30px;
 }
