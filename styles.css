@@ -14,6 +14,7 @@ body{
     display: grid;
     grid-template-columns: 20fr 80fr;
     height: 100%;
+    width: 100%;
 }
 .side-container{
     display: flex;
@@ -53,12 +54,14 @@ img{
     height: 100%;
 }
 .content-container{
-    padding: 20px;
+    background-color: rgb(198, 217, 233);
+    max-width: 100%;
 }
 .content-container > .header{
     display: grid;
     width: 100%;
     grid-template-rows: 50px 50px;
+    background-color: white;
 }
 .header-container{
     display: grid;
@@ -84,12 +87,14 @@ input{
 }
 .subheader-container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 .subheader-container > .buttons-container{
     display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-columns: 60px 60px 60px ;
+    width: 100%;
 }
 .buttons-container > button {
     background-color: rgb(0, 110, 255);
@@ -99,6 +104,20 @@ input{
     height: 25px;
     font-size: 0.8rem;
 }
-.projects{
+.body{
     background-color: rgb(198, 217, 233);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+h1{
+    font-size: 1.2rem;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.annoucements{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
