@@ -107,17 +107,31 @@ input{
 .body{
     background-color: rgb(198, 217, 233);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
     padding: 20px;
 }
 h1{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .projects{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 .annoucements{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.projects > #projects{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-left: solid orange 7px;
+}
+.annoucements > #annoucements, .trending{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
