@@ -60,7 +60,8 @@ img{
 .content-container > .header{
     display: grid;
     width: 100%;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
     background-color: white;
 }
 .header-container{
@@ -68,6 +69,7 @@ img{
     grid-template-columns: 1fr 1fr;
     height: 20px;
     gap: 10px;
+    padding: 20px;
 }
 .header-container > .search-container > button{
     height: 100%;
@@ -89,6 +91,7 @@ input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    padding: auto;
 }
 .subheader-container > .buttons-container{
     display: grid;
@@ -124,14 +127,20 @@ h1{
     grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
-.projects > #projects{
+.projects >  #projects{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
     border-left: solid orange 7px;
 }
-.annoucements > #annoucements, .trending{
+.annoucements > div > #annoucements, .trending{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+}
+.subheader-container > .details-container{
+    padding-inline: 30px;
+}
+.header-container > .details-container > span {
+    float: right;
 }
