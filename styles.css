@@ -17,28 +17,62 @@ body{
 .container{
     background-color: aliceblue;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 15% 85%;
     margin:0px;
-    gap: 50px;
     height: 100%;
     width: 100%;
 }
 .nav{
     display: grid;
-    grid-template-rows: 60px 240px 120px;
+    grid-template-rows: 50px 190px 100px;
     padding: 20px;
+    gap: 20px;
     background-color: rgb(50, 114, 252);
     overflow: hidden;
 }
 .header{
     display: grid;
-    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-columns: 30px 100px;
+    place-items: center;
     height: 60px;
 }
 
 img{
     max-height: 100%;
     object-fit: contain;
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
+    fill: white;
+}
+ul{
+    display: grid;
+    grid-template-rows: repeat(6, 20px);
+    gap: 10px;
+    place-items: center;
+    padding: 0px;
+    
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.icon > img{
+    height: 20px;
+    width: 20px;
+}
+.header > span{
+    display: grid;
+    place-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+li{
+    display: grid;
+    grid-template-columns: 20px 100px ;
+    place-items: center;
+    gap: 10px;
+    list-style: none;
+    font-weight: bold;
+    color: white;
 }
