@@ -146,16 +146,15 @@ input{
     font-weight: bold;
 }
 .body{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 75% 25%;
     padding: 20px;
     gap: 10px;
 }
 .body-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 .projects{
     background-color: white;
@@ -181,16 +180,51 @@ input{
 .side-content{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
 }
 .annoucements{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 .annoucements > div > h1{
     font-size: 1rem;
 }
 .annoucements > div{
     font-size: 0.8rem;
+}
+h5{
+    margin: 0;
+    font-size: 0.8rem;
+}
+.owner > span{
+   font-size: 0.8rem;
+}
+.picture-holder{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+}
+#first{
+    background-image: url(./images/doraemon-tv-series-1920x1200-13864.png);
+    /* height: 50px;
+    width: 50px; */
+}
+#second{
+    background-image: url(./images/12447.jpg);
+}
+#third{
+    background-image: url(./images/spongebob-smiley-2048x2048-9386.jpg);
+}
+.trending{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0;
+}
+h4{
+    margin: 0;
+    margin-bottom: 10px;
 }
