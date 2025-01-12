@@ -72,12 +72,15 @@ li{
     justify-content: flex-start;
     align-items: center;
 }
+input:focus{
+    border: rgb(40, 171, 247);
+}
 input{
     height: 20px;
     width: 90%;
     border-radius: 20px;
     border: none;
-    background-color: aliceblue;
+    background-color: rgb(213, 221, 228);
 }
 .icon-section{
     display: flex;
@@ -141,4 +144,53 @@ input{
     border-radius: 20px;
     color: white;
     font-weight: bold;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+}
+.body-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.projects{
+    background-color: white;
+    border-radius: 10px;
+    border-left: solid orange 7px;
+    padding: 10px;
+}
+.projects > h1{
+    font-size: 1rem;
+}
+.projects > p{
+    font-size: 0.8rem;
+}
+.projects > .icons{
+    float: right;
+    height: 15px;
+}
+.projects > .icons > img {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+.side-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.annoucements{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.annoucements > div > h1{
+    font-size: 1rem;
+}
+.annoucements > div{
+    font-size: 0.8rem;
 }
